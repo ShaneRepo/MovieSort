@@ -25,6 +25,11 @@ $movies = array(
     'Source Code' => 4,
 );
 // display in original order
+echo '<tr><td colspan="2"><b>In their original order:</b></td></tr>';
+foreach ($movies as $title => $rating){
+    echo "<tr><td>$rating</td><td>$title</td></tr>\n";
+}
+
 ?>
 </table>
 </body>
