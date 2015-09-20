@@ -29,7 +29,12 @@ echo '<tr><td colspan="2"><b>In their original order:</b></td></tr>';
 foreach ($movies as $title => $rating){
     echo "<tr><td>$rating</td><td>$title</td></tr>\n";
 }
-
+// display sorted by title
+ksort($movies);
+echo '<tr><td colspan="2"><b>Sorted by Title:</b></td></tr>';
+foreach ($movies as $title => $rating){
+    echo "<tr><td>$rating</td><td>$title</td></tr>\n";
+}
 ?>
 </table>
 </body>
